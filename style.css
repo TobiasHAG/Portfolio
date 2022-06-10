@@ -96,7 +96,7 @@ ul li a{
 ul li:hover a{
     color:#fff;
 }
-ul li:last-child::after{
+ul li:not(.shadow_negation):last-child::after{
     box-shadow: -120px 120px 20px rgba(0,0,0,0.25);
 }
 ul li span {
@@ -123,36 +123,6 @@ ul li:hover span{
     font-weight:600;
     text-align:center;
 }
-
-        /* Center the loader */
-        #loader {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            z-index: 1;
-            width: 120px;
-            height: 120px;
-            margin: -76px 0 0 -76px;
-            border: 16px solid #dae0e8;
-            border-radius: 50%;
-            border-top: 16px solid #187cef;
-            -webkit-animation: spin 1.5s linear infinite;
-            animation: spin 1.5s linear infinite;
-          }
-          
-          @-webkit-keyframes spin {
-              from {opacity:0};
-              to{opacity:1};
-            0% { -webkit-transform: rotate(0deg); }
-            100% { -webkit-transform: rotate(360deg); }
-          }
-          
-          @keyframes spin {
-              from {opacity:0};
-              to{opacity:1};
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-          }
           
           /* Add animation to "page content" */
           .animate-bottom {
@@ -238,3 +208,11 @@ ul li:hover span{
           .about_left .about_right {
             display:none;
           }
+
+          .shadow {
+          box-shadow: -20px 420px 20px rgba(0,0,0,0.25);
+          }
+
+          .shadow2 {
+            box-shadow: -20px 520px 20px rgba(0,0,0,0.25);
+            }
