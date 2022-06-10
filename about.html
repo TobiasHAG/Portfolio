@@ -17,25 +17,22 @@
     
     </head>
 
-        <body onload="myFunction()" style="margin:0;">
+        <body style="margin:0;">
         
-        <div id="loader"></div>
-        
-        <div style="display:none;" id="myDiv" class="animate-bottom">
-          <h2>Section About</h2>
-          <p>Test de la section du site</p>
+        <div class="about_separator">
+          <div class="about_left">
+            <ul class="animate-left">
+              <li style="--i:5; --clr:#37383e; width:500px;" class="menu_titre"><a href="#" class="menu_nom"><span><i class="fa-solid fa-person"></i></span>
+              About Me, Myself, and my life of Junior Web Developer.</a></li>
+              <li style="--i:4; --clr:#187cef; width:500px;"><a href="#"><span><i class="fa-brands fa-discourse"></i></span>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</a></li>
+            </ul>
+          </div>
+          <div class="about_right">
+            <ul class="animate-right">
+              <li style="--i:5; --clr:#187cef; width:530px;"><a href="#"><span><i class="fa-brands fa-discourse"></i></span>
+                <img src="img/test3.jpg" style="width:500px;"></a></li>
+            </ul>    
+          </div>
         </div>
-        
-        <script>
-        var myVar;
-        
-        function myFunction() {
-          myVar = setTimeout(showPage, 1000);
-        }
-        
-        function showPage() {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("myDiv").style.display = "block";
-        }
-        </script>
 </html>

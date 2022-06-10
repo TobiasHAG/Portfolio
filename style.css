@@ -7,11 +7,14 @@
 }
 
 body {
+    background: #434750;
+}
+
+.index_center {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #434750;
 }
 
 ul {
@@ -155,9 +158,9 @@ ul li:hover span{
           .animate-bottom {
             position: relative;
             -webkit-animation-name: animatebottom;
-            -webkit-animation-duration: 1s;
+            -webkit-animation-duration: 1.5s;
             animation-name: animatebottom;
-            animation-duration: 1s
+            animation-duration: 1.5s
           }
           
           @-webkit-keyframes animatebottom {
@@ -169,8 +172,69 @@ ul li:hover span{
             from{ bottom:-100px; opacity:0 } 
             to{ bottom:0; opacity:1 }
           }
+
+          .animate-fixed {
+            position: relative;
+            -webkit-animation-name: animate-fixed;
+            -webkit-animation-duration: 2.2s;
+            animation-name: animate-fixed;
+            animation-duration: 2.2s;
+          }
           
-          #myDiv {
-            display: none;
-            text-align: center;
+          @-webkit-keyframes animate-fixed {
+            from { bottom:0px; opacity:0 } 
+            to { bottom:0px; opacity:1 }
+          }
+          
+          @keyframes animate-fixed { 
+            from{ bottom:0px; opacity:0 } 
+            to{ bottom:0; opacity:1 }
+          }
+
+          .animate-left {
+            position: relative;
+            -webkit-animation-name: animate-left;
+            -webkit-animation-duration: 2.2s;
+            animation-name: animate-left;
+            animation-duration: 2.2s;
+          }
+          
+          @-webkit-keyframes animate-left {
+            from { left:-220px; opacity:0 } 
+            to { left:0px; opacity:1 }
+          }
+          
+          @keyframes animate-left { 
+            from{ left:-220px; opacity:0 } 
+            to{ left:0; opacity:1 }
+          }
+
+          .animate-right {
+            position: relative;
+            -webkit-animation-name: animate-right;
+            -webkit-animation-duration: 2.2s;
+            animation-name: animate-right;
+            animation-duration: 2.2s;
+          }
+          
+          @-webkit-keyframes animate-right {
+            from { right:-220px; opacity:0 } 
+            to { right:0px; opacity:1 }
+          }
+          
+          @keyframes animate-right { 
+            from{ right:-220px; opacity:0 } 
+            to{ right:0; opacity:1 }
+          }
+
+          .about_separator {
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            min-height:100vh;
+            gap:300px;
+          }
+
+          .about_left .about_right {
+            display:none;
           }
